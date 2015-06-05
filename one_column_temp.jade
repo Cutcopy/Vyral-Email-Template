@@ -1,0 +1,123 @@
+﻿- var name = "Mojo Jojo"; 
+- var company = "keller williams"; 
+- var location = "Greensboro"; 
+- var address = "1501 Highwoods Blvd Suite 103 | Greensboro, NC 27410";
+- var email = "someone@email.com"; 
+- var phone = "555-555-5555"; 
+- var preheader = "preheader text";
+- var banner= "https://972d692809-custmedia.vresp.com/032acd4ad4/Hatch_blog.jpg";
+- var title = "Headline";
+- var screenshot = "https://972d692809-custmedia.vresp.com/032acd4ad4/Erik-Hatch-PLAY.jpg"; 
+- var article = "When it comes to selling your home, most Realtors practice the three P's. They put your home on the MLS, put a sign in the yard, and pray that it sells. In today's market, it takes much more than that to sell a home quickly and for top dollar. We advertise our listings all over the web to optimize the traffic that your home receives online.";
+- var articleLink = "http://blogger.com";
+- var articleLinkText = "Watch this video to learn how to avoid other mistakes!";
+- var date = "04/27/2015 | Colorado Springs, CO"; 
+- var youtubeLink = "http://youtube.com"; 
+- var homeValue = "http://home.com"; 
+- var homeValueColor = "#0000ff"; 
+- var homeSearch = "http://homesearchlink.com"; 
+- var homeSearchColor = "#323232"; 
+- var facebook = "http://facebook.com";
+- var linkedin = "http://linkedin.com";
+- var googleplus = "http://plus.google.com"; 
+- var youtubeChannel = "http://youtube.com"; 
+- var twitter = "http://twitter.com";
+- var blog = "http://blogger.com";
+
+body(bgcolor="#ccc", style="font-family: Helvetica, Arial, sans-serif; background-color: #fcfcfc;", width="100%")
+// Preheader goes here
+p(style="color: transparent; display: none;") #{preheader}
+
+table.container(style="width:100%; max-width: 630px;", align="center", cellpadding="0", cellspacing="0")
+  tr
+    td
+      table(align="center")
+        tr
+          td.Logo(width="630px;")
+            // Email Header goes here. remember to fill out the alt text
+            img(alt="#{location} Real Estate Video Blog with #{client}", src="#{banner}", style="width: 100%; float: left;")
+table.container(style="width:100%; max-width: 630px;", bgcolor="#fcfcfc", align="center", cellpadding="0", cellspacing="0")
+  tr
+    td(style="text-align: center;")
+      // Headline
+      h1#title.headline(style="font-family: Arial, Helvetica, sans-serif; font-size: 1.6em; color: #404040; padding: 0.3em;") #{title}
+  tr
+    td(style="text-align: center;")
+      p(style="margin-top: 0em; font-family: helvetica, arial, sans-serif;") Press Play to Watch
+  tr
+    td(bgcolor="white", colspan="3", align="center")
+      // Insert Video Thumbnail Here. remember to fill out the alt text
+      a(href="#{blogLink}")
+        img(alt="click here to play our video", src="#{screenshot}", style="max-width: 630px; width: 100%;")
+  tr
+    td(colspan="3", height="15")  
+  tr
+    td(bgcolor="#fcfcfc", colspan="3", align="center")
+      table
+        tr
+          // Date and Location
+          td
+            center
+              p(style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 0.9em; padding: 0.3em;") #{date}
+              // Preview Text
+              p #{article}
+              a(href="#{articleLink}")
+                p #{articleLinkText}
+              // video link where the # is
+              p(style="padding: 0.3em; font-family: helvetica, arial, sans-serif;")
+                a(href="#{youtubeLink}") Watch on Your Mobile Device
+          td.spacer  
+  tr
+    td.CTA(align="center")
+      table(width="80%", align="center", style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;")
+        tr
+          // color
+          td(style="text-align: center; background-color: #{homeValueColor};")
+            // link
+            a(href="#{homeValue}", style="color: white; text-decoration: none !important;")
+              p(style="padding: 1em; font-size: 1.1em; font-family: helvetica, arial, sans-serif;") Get an Instant Value of Your #{location} Home Now!
+        tr
+          td.spacer(width="15")  
+        tr
+          // color
+          td(style="text-align: center; background-color: #{homeSearchColor};")
+            // link
+            a(href="#{homeSearch}", style="color: white; text-decoration: none !important;")
+              p(style="padding: 1em; font-size: 1.1em; font-family: helvetica, arial, sans-serif;") Search All #{location} Homes on the MLS
+  tr(align="center")
+    td.spacer(width="15")
+      span(style="color: white;") --------------
+  tr(align="center")
+    td(width="80%")
+      // Socials
+      // facebook
+      a(href="#{facebook}", target="_blank", alt="Join us on Facebook", style="text-decoration: none;")
+        img(src="http://i842.photobucket.com/albums/zz344/VyralMarketing/fb_64_zps9e099311.png", width="8%", style="margin-right: 1em;")
+      //LinkedIn
+      a(href="#{linkedin}", target="_blank", alt="Join us on Facebook", style="text-decoration: none;")
+        img(src="http://i842.photobucket.com/albums/zz344/VyralMarketing/Linkedin_64_zpse9c71241.png", width="8%", style="margin-right: 1em;")
+      // Google Plus
+      a(href="#{googleplus}", target="_blank", style="text-decoration: none;")
+        img(src="http://i842.photobucket.com/albums/zz344/VyralMarketing/plus_64_zpscef6f466.png", alt="Follow us on Google Plus", width="8%", style="margin-right: 1em;")
+      // Youtube
+      a(href="#{youtubeChannel}", target="_blank", style="text-decoration: none;")
+        img(src="http://i842.photobucket.com/albums/zz344/VyralMarketing/youtube_64_zpsabd17045.png", alt="Check out our Youtube Channel", width="8%", style="margin-right: 1em;")
+      // Twitter
+      a(href="#{twitter}", target="_blank", style="text-decoration: none;")
+        img(src="http://i842.photobucket.com/albums/zz344/VyralMarketing/Twitter_64_zpsa8629156.jpg", alt="Follow us on Twitter", width="8%", style="margin-right: 1em;")
+      //Blogger
+      a(href="#{blog}", target="_blank", style="text-decoration: none;")
+        img(src="http://i842.photobucket.com/albums/zz344/VyralMarketing/1-1-2013/icon_blogger_zps3be29b7e.jpg", alt="Check out our video blog", width="8%", style="margin-right: 1em;")  
+  tr
+    td(width="100%", style="text-align: center; font-size: 0.8em;")
+      // Contact Info
+      p(style="padding: 1.5em; font-family: helvetica, arial, sans-serif;")
+        span#client-name #{name}
+        |  | #{company}
+        br
+        |          #{address} 
+        br
+        a(href="tel:#{phone}") #{phone}
+        |  
+        a(href="mailto:#{email}") #{email}
+
