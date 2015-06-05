@@ -1,4 +1,4 @@
-﻿- var name = "Mojo Jojo"; 
+- var name = "Mojo Jojo"; 
 - var company = "keller williams"; 
 - var location = "Greensboro"; 
 - var address = "1501 Highwoods Blvd Suite 103 | Greensboro, NC 27410";
@@ -24,11 +24,11 @@
 - var twitter = "http://twitter.com";
 - var blog = "http://blogger.com";
 
-body(bgcolor="#ccc", style="font-family: Helvetica, Arial, sans-serif; background-color: #fcfcfc;", width="100%")
+body(bgcolor="#ccc", style="font-family: Helvetica, Arial, sans-serif; background-color: #efefef;", width="100%")
 // Preheader goes here
 p(style="color: transparent; display: none;") #{preheader}
 
-table.container(style="width:100%; max-width: 630px;", align="center", cellpadding="0", cellspacing="0")
+table.container(style="width:100%; max-width: 635px;", align="center", cellpadding="0", cellspacing="0")
   tr
     td
       table(align="center")
@@ -36,7 +36,7 @@ table.container(style="width:100%; max-width: 630px;", align="center", cellpaddi
           td.Logo(width="630px;")
             // Email Header goes here. remember to fill out the alt text
             img(alt="#{location} Real Estate Video Blog with #{client}", src="#{banner}", style="width: 100%; float: left;")
-table.container(style="width:100%; max-width: 630px;", bgcolor="#fcfcfc", align="center", cellpadding="0", cellspacing="0")
+table.container(style="width:100%; max-width: 630px;", bgcolor="white", align="center", cellpadding="0", cellspacing="0")
   tr
     td(style="text-align: center;")
       // Headline
@@ -60,7 +60,7 @@ table.container(style="width:100%; max-width: 630px;", bgcolor="#fcfcfc", align=
             center
               p(style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 0.9em; padding: 0.3em;") #{date}
               // Preview Text
-              p #{article}
+              p(style="padding: 0em 1em;") #{article}
               a(href="#{articleLink}")
                 p #{articleLinkText}
               // video link where the # is
@@ -75,7 +75,8 @@ table.container(style="width:100%; max-width: 630px;", bgcolor="#fcfcfc", align=
           td(style="text-align: center; background-color: #{homeValueColor};")
             // link
             a(href="#{homeValue}", style="color: white; text-decoration: none !important;")
-              p(style="padding: 1em; font-size: 1.1em; font-family: helvetica, arial, sans-serif;") Get an Instant Value of Your #{location} Home Now!
+              div(style="padding: 1em; font-size: 1.1em; font-family: helvetica, arial, sans-serif;") 
+                p Get an Instant Value of Your #{location} Home Now!
         tr
           td.spacer(width="15")  
         tr
@@ -83,7 +84,8 @@ table.container(style="width:100%; max-width: 630px;", bgcolor="#fcfcfc", align=
           td(style="text-align: center; background-color: #{homeSearchColor};")
             // link
             a(href="#{homeSearch}", style="color: white; text-decoration: none !important;")
-              p(style="padding: 1em; font-size: 1.1em; font-family: helvetica, arial, sans-serif;") Search All #{location} Homes on the MLS
+              div(style="padding: 1em; font-size: 1.1em; font-family: helvetica, arial, sans-serif;") 
+                p Search All #{location} Homes on the MLS
   tr(align="center")
     td.spacer(width="15")
       span(style="color: white;") --------------
@@ -115,9 +117,9 @@ table.container(style="width:100%; max-width: 630px;", bgcolor="#fcfcfc", align=
         span#client-name #{name}
         |  | #{company}
         br
-        |          #{address} 
+        | #{address} 
         br
         a(href="tel:#{phone}") #{phone}
-        |  
+        br  
         a(href="mailto:#{email}") #{email}
 
